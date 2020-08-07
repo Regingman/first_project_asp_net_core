@@ -1,0 +1,48 @@
+﻿@model WebApplication3.Data.ListLesson
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ListLesson</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NumberLesson)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NumberLesson)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DayOfWeek)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DayOfWeek)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Groups)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Groups.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Lessons)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Lessons.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Teachers)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Teachers.Id)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
