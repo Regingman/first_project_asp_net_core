@@ -63,3 +63,4 @@ C:\Users\User\source\repos\WebApplication3\obj\Debug\netcoreapp2.1\Razor\Views\T
 C:\Users\User\source\repos\WebApplication3\obj\Debug\netcoreapp2.1\Razor\Views\Teachers\Edit.g.cshtml.cs
 C:\Users\User\source\repos\WebApplication3\obj\Debug\netcoreapp2.1\Razor\Views\Teachers\Index.g.cshtml.cs
 C:\Users\User\source\repos\WebApplication3\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Users\User\source\repos\WebApplication3\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Bar.g.cshtml.cs

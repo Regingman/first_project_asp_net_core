@@ -155,5 +155,34 @@ namespace WebApplication3.Controllers
         {
             return _context.Departments.Any(e => e.Id == id);
         }
+
+
+        public IActionResult Bar()
+        {
+            var applicationDbContext = _context.Departments.Include(d => d.Faculty);
+
+            var lstModel1 = _context.Faculties.Select(c =>
+            new SimpleReportViewModel { DimensionOne = c.Name, Quantity = c.Departments.Count })
+                .ToList();
+
+            var lstModel2 = _context.Departments.Select(c =>
+            new SimpleReportViewModel { DimensionOne = c.Faculty.Name, Quantity = c.Faculty.Departments.Count })
+                .GroupBy(b => b.DimensionOne)
+                .Select(b =>
+                new SimpleReportViewModel { DimensionOne = b.Key, Quantity = b.Count() })
+                .ToList();
+
+            return View(lstModel2);
+        }
     }
+
+
+
+}
+
+
+public class SimpleReportViewModel
+{
+    public string DimensionOne { get; set; }
+    public int Quantity { get; set; }
 }

@@ -87,6 +87,7 @@ namespace WebApplication3.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Name")] Faculty faculty)
         {
+
             if (id != faculty.Id)
             {
                 return NotFound();
