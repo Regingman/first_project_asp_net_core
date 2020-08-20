@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,7 +13,18 @@ namespace WebApplication3.Data
             : base(options)
         {
         }
-
+        public class ChangeRoleViewModel
+        {
+            public string UserId { get; set; }
+            public string UserEmail { get; set; }
+            public List<IdentityRole> AllRoles { get; set; }
+            public IList<string> UserRoles { get; set; }
+            public ChangeRoleViewModel()
+            {
+                AllRoles = new List<IdentityRole>();
+                UserRoles = new List<string>();
+            }
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -58,6 +70,8 @@ namespace WebApplication3.Data
         public virtual DbSet<ListLesson> ListLessons { get; set; }
 
         public virtual DbSet<Teacher> Teachers { get; set; }
+
+        public virtual DbSet<CompanyInfo> CompanyInfos { get; set; }
     }
 
 
@@ -126,6 +140,21 @@ namespace WebApplication3.Data
 
         public int Id_faculty { get; set; }
         public virtual Faculty Faculty { get; set; }
+    }
+
+    public class CompanyInfo
+    {
+        public int Id { get; set; }
+        public string ShopName { get; set; }
+
+        public string Address { get; set; }
+
+        public string Description{ get; set; }
+
+        public string ThumbNail{ get; set; }
+
+        public double Latitude { get; set; }
+        public double Longtitude { get; set; }
     }
 
 }

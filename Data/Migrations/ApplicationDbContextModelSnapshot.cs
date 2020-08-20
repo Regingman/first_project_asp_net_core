@@ -184,6 +184,29 @@ namespace WebApplication3.Data.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
+            modelBuilder.Entity("WebApplication3.Data.CompanyInfo", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Address");
+
+                    b.Property<string>("Description");
+
+                    b.Property<double>("Latitude");
+
+                    b.Property<double>("Longtitude");
+
+                    b.Property<string>("ShopName");
+
+                    b.Property<string>("ThumbNail");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("CompanyInfos");
+                });
+
             modelBuilder.Entity("WebApplication3.Data.Department", b =>
                 {
                     b.Property<int>("Id")

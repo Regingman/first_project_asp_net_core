@@ -62,5 +62,14 @@ C:\Users\User\source\repos\WebApplication3\obj\Debug\netcoreapp2.1\Razor\Views\T
 C:\Users\User\source\repos\WebApplication3\obj\Debug\netcoreapp2.1\Razor\Views\Teachers\Details.g.cshtml.cs
 C:\Users\User\source\repos\WebApplication3\obj\Debug\netcoreapp2.1\Razor\Views\Teachers\Edit.g.cshtml.cs
 C:\Users\User\source\repos\WebApplication3\obj\Debug\netcoreapp2.1\Razor\Views\Teachers\Index.g.cshtml.cs
-C:\Users\User\source\repos\WebApplication3\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
 C:\Users\User\source\repos\WebApplication3\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Bar.g.cshtml.cs
+C:\Users\User\source\repos\WebApplication3\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Users\User\source\repos\WebApplication3\obj\Debug\netcoreapp2.1\Razor\Views\CompanyInfoes\Create.g.cshtml.cs
+C:\Users\User\source\repos\WebApplication3\obj\Debug\netcoreapp2.1\Razor\Views\CompanyInfoes\Delete.g.cshtml.cs
+C:\Users\User\source\repos\WebApplication3\obj\Debug\netcoreapp2.1\Razor\Views\CompanyInfoes\Details.g.cshtml.cs
+C:\Users\User\source\repos\WebApplication3\obj\Debug\netcoreapp2.1\Razor\Views\CompanyInfoes\Edit.g.cshtml.cs
+C:\Users\User\source\repos\WebApplication3\obj\Debug\netcoreapp2.1\Razor\Views\CompanyInfoes\Index.g.cshtml.cs
+C:\Users\User\source\repos\WebApplication3\obj\Debug\netcoreapp2.1\Razor\Views\Roles\Create.g.cshtml.cs
+C:\Users\User\source\repos\WebApplication3\obj\Debug\netcoreapp2.1\Razor\Views\Roles\Edit.g.cshtml.cs
+C:\Users\User\source\repos\WebApplication3\obj\Debug\netcoreapp2.1\Razor\Views\Roles\Index.g.cshtml.cs
+C:\Users\User\source\repos\WebApplication3\obj\Debug\netcoreapp2.1\Razor\Views\Roles\UserList.g.cshtml.cs

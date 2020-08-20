@@ -13,6 +13,7 @@ namespace WebApplication3.Controllers
     {
         private readonly ApplicationDbContext _context;
 
+       // [Authorize(Roles = "admin")]
         public GroupsController(ApplicationDbContext context)
         {
             _context = context;

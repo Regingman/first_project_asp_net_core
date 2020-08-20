@@ -2,6 +2,74 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.1": {
+      "ClosedXML/0.95.3": {
+        "type": "package",
+        "dependencies": {
+          "DocumentFormat.OpenXml": "2.7.2",
+          "ExcelNumberFormat": "1.0.10",
+          "Microsoft.CSharp": "4.7.0",
+          "System.Drawing.Common": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/ClosedXML.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/ClosedXML.dll": {}
+        }
+      },
+      "DocumentFormat.OpenXml/2.7.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "System.IO.Packaging": "4.0.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/DocumentFormat.OpenXml.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/DocumentFormat.OpenXml.dll": {}
+        }
+      },
+      "ExcelNumberFormat/1.0.10": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/ExcelNumberFormat.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/ExcelNumberFormat.dll": {}
+        }
+      },
+      "Flurl/2.8.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Flurl.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Flurl.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Mvc/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "[3.2.3, 3.3.0)",
+          "Microsoft.AspNet.WebPages": "[3.2.3, 3.3.0)"
+        },
+        "compile": {
+          "lib/net45/System.Web.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Mvc.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Razor/3.2.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Web.Razor.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Razor.dll": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "type": "package",
         "dependencies": {
@@ -13,6 +81,25 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Net.Http.Formatting.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebPages/3.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "[3.2.3, 3.3.0)",
+          "Microsoft.Web.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/System.Web.Helpers.dll": {},
+          "lib/net45/System.Web.WebPages.Deployment.dll": {},
+          "lib/net45/System.Web.WebPages.Razor.dll": {},
+          "lib/net45/System.Web.WebPages.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Helpers.dll": {},
+          "lib/net45/System.Web.WebPages.Deployment.dll": {},
+          "lib/net45/System.Web.WebPages.Razor.dll": {},
+          "lib/net45/System.Web.WebPages.dll": {}
         }
       },
       "Microsoft.AspNetCore/2.1.1": {
@@ -1622,7 +1709,7 @@
           "lib/netstandard1.3/Microsoft.CodeAnalysis.Workspaces.dll": {}
         }
       },
-      "Microsoft.CSharp/4.5.0": {
+      "Microsoft.CSharp/4.7.0": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.0/_._": {}
@@ -2611,7 +2698,7 @@
           "Microsoft.NETCore.DotNetAppHost": "2.1.0"
         }
       },
-      "Microsoft.NETCore.Platforms/2.1.0": {
+      "Microsoft.NETCore.Platforms/3.0.0": {
         "type": "package",
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -2742,6 +2829,15 @@
           "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll": {}
         }
       },
+      "Microsoft.Web.Infrastructure/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
+        }
+      },
       "Microsoft.Win32.Registry/4.5.0": {
         "type": "package",
         "dependencies": {
@@ -2760,6 +2856,24 @@
             "rid": "unix"
           },
           "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "Microsoft.Win32.SystemEvents/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.0.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp2.0/Microsoft.Win32.SystemEvents.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -2834,6 +2948,18 @@
         },
         "runtime": {
           "lib/netstandard1.0/Remotion.Linq.dll": {}
+        }
+      },
+      "Rotativa/1.7.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Mvc": "5.2.3"
+        },
+        "compile": {
+          "lib/net461/Rotativa.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Rotativa.dll": {}
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -3040,6 +3166,21 @@
             "assetType": "native",
             "rid": "win-x86"
           }
+        }
+      },
+      "sautinsoft.document/4.5.6.17": {
+        "type": "package",
+        "dependencies": {
+          "System.Drawing.Common": "4.6.0",
+          "System.IO.Packaging": "4.4.0",
+          "System.Text.Encoding.CodePages": "4.0.1",
+          "System.Xml.XPath.XmlDocument": "4.3.0"
+        },
+        "compile": {
+          "lib/netcoreapp2.1/SautinSoft.Document.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/SautinSoft.Document.dll": {}
         }
       },
       "Swashbuckle.AspNetCore/5.5.1": {
@@ -3451,6 +3592,29 @@
           "ref/netstandard1.5/System.Diagnostics.Tracing.dll": {}
         }
       },
+      "System.Drawing.Common/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.0.0",
+          "Microsoft.Win32.SystemEvents": "4.6.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.Drawing.Common.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Drawing.Common.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netcoreapp2.0/System.Drawing.Common.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
       "System.Dynamic.Runtime/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -3621,6 +3785,15 @@
         },
         "runtime": {
           "lib/netstandard1.3/System.IO.FileSystem.Primitives.dll": {}
+        }
+      },
+      "System.IO.Packaging/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard1.3/System.IO.Packaging.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.IO.Packaging.dll": {}
         }
       },
       "System.IO.Pipelines/4.5.0": {
@@ -4430,7 +4603,7 @@
           "System.Runtime.CompilerServices.Unsafe": "4.5.0"
         },
         "compile": {
-          "ref/netstandard2.0/_._": {}
+          "ref/netstandard2.0/System.Text.Encoding.CodePages.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {}
@@ -4688,7 +4861,7 @@
           "System.Xml.ReaderWriter": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {}
+          "ref/netstandard1.3/System.Xml.XPath.dll": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.dll": {}
@@ -4713,10 +4886,156 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "System.Xml.XPath.XmlDocument/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Xml.ReaderWriter": "4.3.0",
+          "System.Xml.XPath": "4.3.0",
+          "System.Xml.XmlDocument": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
+        }
+      },
+      "TelerikMvcExtensions/2013.2.611": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Telerik.Web.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Telerik.Web.Mvc.dll": {}
+        }
+      },
+      "TemplateEngine.Docx/1.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DocumentFormat.OpenXml": "2.7.2",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/TemplateEngine.Docx.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/TemplateEngine.Docx.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "ClosedXML/0.95.3": {
+      "sha512": "Ud8+fHLzZRjtSk7NMxl5krRCXZ5zD92TdfhLEt22YFBkqWD4BI8Vhxir9VDcFCeOD2JVa/hzpkbWqE3TeC84WQ==",
+      "type": "package",
+      "path": "closedxml/0.95.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "closedxml.0.95.3.nupkg.sha512",
+        "closedxml.nuspec",
+        "lib/net40/ClosedXML.dll",
+        "lib/net40/ClosedXML.pdb",
+        "lib/net40/ClosedXML.xml",
+        "lib/net46/ClosedXML.dll",
+        "lib/net46/ClosedXML.pdb",
+        "lib/net46/ClosedXML.xml",
+        "lib/netstandard2.0/ClosedXML.dll",
+        "lib/netstandard2.0/ClosedXML.pdb",
+        "lib/netstandard2.0/ClosedXML.xml"
+      ]
+    },
+    "DocumentFormat.OpenXml/2.7.2": {
+      "sha512": "tWT7iu0ab9PNoMTWjv24rt+qnyqvcnPOYs167vPnk4aegAYSAxoUjwNW+VxY8xoLtJntQ/JlWTi7Vt+8TghLlQ==",
+      "type": "package",
+      "path": "documentformat.openxml/2.7.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "documentformat.openxml.2.7.2.nupkg.sha512",
+        "documentformat.openxml.nuspec",
+        "lib/net35/DocumentFormat.OpenXml.dll",
+        "lib/net35/DocumentFormat.OpenXml.xml",
+        "lib/net40/DocumentFormat.OpenXml.dll",
+        "lib/net40/DocumentFormat.OpenXml.xml",
+        "lib/net46/DocumentFormat.OpenXml.dll",
+        "lib/net46/DocumentFormat.OpenXml.xml",
+        "lib/netstandard1.3/DocumentFormat.OpenXml.dll",
+        "lib/netstandard1.3/DocumentFormat.OpenXml.xml"
+      ]
+    },
+    "ExcelNumberFormat/1.0.10": {
+      "sha512": "dRx817M5t0sv4GCJyAXU8qmhFXcqRpCHzLpxNmkMWTvzlfE0/KM7BNk6qEble0ffAr4xT7RyU7s/HpovVlA/9g==",
+      "type": "package",
+      "path": "excelnumberformat/1.0.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "excelnumberformat.1.0.10.nupkg.sha512",
+        "excelnumberformat.nuspec",
+        "lib/net20/ExcelNumberFormat.dll",
+        "lib/net20/ExcelNumberFormat.xml",
+        "lib/netstandard1.0/ExcelNumberFormat.dll",
+        "lib/netstandard1.0/ExcelNumberFormat.xml",
+        "lib/netstandard2.0/ExcelNumberFormat.dll",
+        "lib/netstandard2.0/ExcelNumberFormat.xml"
+      ]
+    },
+    "Flurl/2.8.2": {
+      "sha512": "3VEYAqkGTGHgla4xuyEB4d8XGLeMX2k05C4WfI7YmKQHsL7RhoGu3L6h1xsKKTPFWjEL13p09XOIGwD1pQ86dg==",
+      "type": "package",
+      "path": "flurl/2.8.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "flurl.2.8.2.nupkg.sha512",
+        "flurl.nuspec",
+        "lib/net40/Flurl.dll",
+        "lib/net40/Flurl.xml",
+        "lib/netstandard1.0/Flurl.dll",
+        "lib/netstandard1.0/Flurl.xml",
+        "lib/netstandard1.3/Flurl.dll",
+        "lib/netstandard1.3/Flurl.xml",
+        "lib/netstandard2.0/Flurl.dll",
+        "lib/netstandard2.0/Flurl.xml"
+      ]
+    },
+    "Microsoft.AspNet.Mvc/5.2.3": {
+      "sha512": "i8jZf5QrbcFmjiYWRD7o7qTak/oXKxV80MgP4cZ33A8GC0RBtBIdZ1VHaloGUg+qsHUz5rVkGpwenM+ugDz5PA==",
+      "type": "package",
+      "path": "microsoft.aspnet.mvc/5.2.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Web.config.install.xdt",
+        "Content/Web.config.uninstall.xdt",
+        "lib/net45/System.Web.Mvc.dll",
+        "lib/net45/System.Web.Mvc.xml",
+        "microsoft.aspnet.mvc.5.2.3.nupkg.sha512",
+        "microsoft.aspnet.mvc.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.Razor/3.2.3": {
+      "sha512": "leta+Q73O7+pR8ThTqXmwaNMSqwZQQ3BHfpUHd8S1XaUWe1jRVLitMHqo1AmY7wPNLyankPA1beiUKEGj8Q3Dw==",
+      "type": "package",
+      "path": "microsoft.aspnet.razor/3.2.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/System.Web.Razor.dll",
+        "lib/net45/System.Web.Razor.xml",
+        "microsoft.aspnet.razor.3.2.3.nupkg.sha512",
+        "microsoft.aspnet.razor.nuspec"
+      ]
+    },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "sha512": "owAlEIUZXWSnkK8Z1c+zR47A0X6ykF4XjbPok4lQKNuciUfHLGPd6QnI+rt/8KlQ17PmF+I4S3f+m+Qe4IvViw==",
       "type": "package",
@@ -4732,6 +5051,27 @@
         "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.xml",
         "microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
         "microsoft.aspnet.webapi.client.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.WebPages/3.2.3": {
+      "sha512": "zbtxBERla5RE/mhftwbrXOzc0r6lh8WcnjpGW7QQe+PvSDDx1BgsTUGzfCXO/vJznHNpY5oCSYLt8Q5vUu7F0g==",
+      "type": "package",
+      "path": "microsoft.aspnet.webpages/3.2.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Web.config.install.xdt",
+        "Content/Web.config.uninstall.xdt",
+        "lib/net45/System.Web.Helpers.dll",
+        "lib/net45/System.Web.Helpers.xml",
+        "lib/net45/System.Web.WebPages.Deployment.dll",
+        "lib/net45/System.Web.WebPages.Deployment.xml",
+        "lib/net45/System.Web.WebPages.Razor.dll",
+        "lib/net45/System.Web.WebPages.Razor.xml",
+        "lib/net45/System.Web.WebPages.dll",
+        "lib/net45/System.Web.WebPages.xml",
+        "microsoft.aspnet.webpages.3.2.3.nupkg.sha512",
+        "microsoft.aspnet.webpages.nuspec"
       ]
     },
     "Microsoft.AspNetCore/2.1.1": {
@@ -6100,10 +6440,10 @@
         "microsoft.codeanalysis.workspaces.common.nuspec"
       ]
     },
-    "Microsoft.CSharp/4.5.0": {
-      "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
+    "Microsoft.CSharp/4.7.0": {
+      "sha512": "pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
       "type": "package",
-      "path": "microsoft.csharp/4.5.0",
+      "path": "microsoft.csharp/4.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6116,6 +6456,7 @@
         "lib/netcoreapp2.0/_._",
         "lib/netstandard1.3/Microsoft.CSharp.dll",
         "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.xml",
         "lib/portable-net45+win8+wp8+wpa81/_._",
         "lib/uap10.0.16299/_._",
         "lib/win8/_._",
@@ -6125,7 +6466,7 @@
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "microsoft.csharp.4.5.0.nupkg.sha512",
+        "microsoft.csharp.4.7.0.nupkg.sha512",
         "microsoft.csharp.nuspec",
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
@@ -7333,17 +7674,17 @@
         "runtime.json"
       ]
     },
-    "Microsoft.NETCore.Platforms/2.1.0": {
-      "sha512": "ok+RPAtESz/9MUXeIEz6Lv5XAGQsaNmEYXMsgVALj4D7kqC8gveKWXWXbufLySR2fWrwZf8smyN5RmHu0e4BHA==",
+    "Microsoft.NETCore.Platforms/3.0.0": {
+      "sha512": "TsETIgVJb/AKoYfSP+iCxkuly5d3inZjTdx/ItZLk2CxY85v8083OBS3uai84kK3/baLnS5/b5XGs6zR7SuuHQ==",
       "type": "package",
-      "path": "microsoft.netcore.platforms/2.1.0",
+      "path": "microsoft.netcore.platforms/3.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/netstandard1.0/_._",
-        "microsoft.netcore.platforms.2.1.0.nupkg.sha512",
+        "microsoft.netcore.platforms.3.0.0.nupkg.sha512",
         "microsoft.netcore.platforms.nuspec",
         "runtime.json",
         "useSharedDesignerContext.txt",
@@ -7647,6 +7988,18 @@
         "microsoft.visualstudio.web.codegenerators.mvc.nuspec"
       ]
     },
+    "Microsoft.Web.Infrastructure/1.0.0": {
+      "sha512": "FNmvLn5m2LTU/Rs2KWVo0SIIh9Ek+U0ojex7xeDaSHw/zgEP77A8vY5cVWgUtBGS8MJfDGNn8rpXJWEIQaPwTg==",
+      "type": "package",
+      "path": "microsoft.web.infrastructure/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/Microsoft.Web.Infrastructure.dll",
+        "microsoft.web.infrastructure.1.0.0.nupkg.sha512",
+        "microsoft.web.infrastructure.nuspec"
+      ]
+    },
     "Microsoft.Win32.Registry/4.5.0": {
       "sha512": "+FWlwd//+Tt56316p00hVePBCouXyEzT86Jb3+AuRotTND0IYn0OO3obs1gnQEs/txEnt+rF2JBGLItTG+Be6A==",
       "type": "package",
@@ -7683,6 +8036,35 @@
         "runtimes/win/lib/net461/Microsoft.Win32.Registry.dll",
         "runtimes/win/lib/netstandard1.3/Microsoft.Win32.Registry.dll",
         "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Win32.SystemEvents/4.6.0": {
+      "sha512": "Edg+pFW5C8WJb680Za2kTV8TqUi6Ahl/WldRVoOVJ23UQLpDHFspa+umgFjkWZw24ETsU99Cg+ErZz683M4chg==",
+      "type": "package",
+      "path": "microsoft.win32.systemevents/4.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Win32.SystemEvents.dll",
+        "lib/net461/Microsoft.Win32.SystemEvents.xml",
+        "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll",
+        "lib/netstandard2.0/Microsoft.Win32.SystemEvents.xml",
+        "microsoft.win32.systemevents.4.6.0.nupkg.sha512",
+        "microsoft.win32.systemevents.nuspec",
+        "ref/net461/Microsoft.Win32.SystemEvents.dll",
+        "ref/net461/Microsoft.Win32.SystemEvents.xml",
+        "ref/net472/Microsoft.Win32.SystemEvents.dll",
+        "ref/net472/Microsoft.Win32.SystemEvents.xml",
+        "ref/netstandard2.0/Microsoft.Win32.SystemEvents.dll",
+        "ref/netstandard2.0/Microsoft.Win32.SystemEvents.xml",
+        "runtimes/win/lib/netcoreapp2.0/Microsoft.Win32.SystemEvents.dll",
+        "runtimes/win/lib/netcoreapp2.0/Microsoft.Win32.SystemEvents.xml",
+        "runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll",
+        "runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.xml",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -7896,6 +8278,23 @@
         "lib/portable-net45+win+wpa81+wp80/Remotion.Linq.xml",
         "remotion.linq.2.2.0.nupkg.sha512",
         "remotion.linq.nuspec"
+      ]
+    },
+    "Rotativa/1.7.3": {
+      "sha512": "MdLzud1Tt9JYLG3aNZHQcEITbT2r829rZAm96iLZAUlilXTsZkReKzyfjaIfwDZ9+++TRUKwWPKjI+WPHVz0ZA==",
+      "type": "package",
+      "path": "rotativa/1.7.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/App_Browsers/qt.browser",
+        "content/Rotativa/help-wkhtmltoimage.txt",
+        "content/Rotativa/help-wkhtmltopdf.txt",
+        "content/Rotativa/wkhtmltoimage.exe",
+        "content/Rotativa/wkhtmltopdf.exe",
+        "lib/net461/Rotativa.dll",
+        "rotativa.1.7.3.nupkg.sha512",
+        "rotativa.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -8165,6 +8564,42 @@
         "runtimes/win-x86/native/sni.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "sautinsoft.document/4.5.6.17": {
+      "sha512": "4PuJKcZ61vqmGdVLjJehPyBiaFVydTJ8IcKyg6vTdHzmjk+Fekzp0RRM5DdkO/TxxDvtPdoe2oiRfkyqJgVNKA==",
+      "type": "package",
+      "path": "sautinsoft.document/4.5.6.17",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/SautinSoft.Document.XML",
+        "lib/net40/SautinSoft.Document.dll",
+        "lib/net45/SautinSoft.Document.XML",
+        "lib/net45/SautinSoft.Document.dll",
+        "lib/net461/SautinSoft.Document.XML",
+        "lib/net461/SautinSoft.Document.dll",
+        "lib/net47/SautinSoft.Document.XML",
+        "lib/net47/SautinSoft.Document.dll",
+        "lib/net48/SautinSoft.Document.XML",
+        "lib/net48/SautinSoft.Document.dll",
+        "lib/netcoreapp2.0/SautinSoft.Document.XML",
+        "lib/netcoreapp2.0/SautinSoft.Document.deps.json",
+        "lib/netcoreapp2.0/SautinSoft.Document.dll",
+        "lib/netcoreapp2.1/SautinSoft.Document.XML",
+        "lib/netcoreapp2.1/SautinSoft.Document.deps.json",
+        "lib/netcoreapp2.1/SautinSoft.Document.dll",
+        "lib/netcoreapp3.0/SautinSoft.Document.XML",
+        "lib/netcoreapp3.0/SautinSoft.Document.deps.json",
+        "lib/netcoreapp3.0/SautinSoft.Document.dll",
+        "lib/netcoreapp3.1/SautinSoft.Document.XML",
+        "lib/netcoreapp3.1/SautinSoft.Document.deps.json",
+        "lib/netcoreapp3.1/SautinSoft.Document.dll",
+        "lib/netstandard2.0/SautinSoft.Document.XML",
+        "lib/netstandard2.0/SautinSoft.Document.deps.json",
+        "lib/netstandard2.0/SautinSoft.Document.dll",
+        "sautinsoft.document.4.5.6.17.nupkg.sha512",
+        "sautinsoft.document.nuspec"
       ]
     },
     "Swashbuckle.AspNetCore/5.5.1": {
@@ -9205,6 +9640,45 @@
         "system.diagnostics.tracing.nuspec"
       ]
     },
+    "System.Drawing.Common/4.6.0": {
+      "sha512": "2A3spjjoPZnvpVh/sDTzd+0H8ZqTdr+hH/6obB8MMfG81EJ85PmxCKDBxhBVQiA25PliKAZ1sKogDcq9mSnFEA==",
+      "type": "package",
+      "path": "system.drawing.common/4.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.Drawing.Common.dll",
+        "lib/netstandard2.0/System.Drawing.Common.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.Drawing.Common.dll",
+        "ref/netcoreapp3.0/System.Drawing.Common.dll",
+        "ref/netcoreapp3.0/System.Drawing.Common.xml",
+        "ref/netstandard2.0/System.Drawing.Common.dll",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/unix/lib/netcoreapp2.0/System.Drawing.Common.dll",
+        "runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll",
+        "runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.xml",
+        "runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll",
+        "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll",
+        "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.xml",
+        "system.drawing.common.4.6.0.nupkg.sha512",
+        "system.drawing.common.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Dynamic.Runtime/4.3.0": {
       "sha512": "SNVi1E/vfWUAs/WYKhE9+qlS6KqK0YVhnlT0HQtr8pMIA8YX3lwy3uPMownDwdYISBdmAF/2holEIldVp85Wag==",
       "type": "package",
@@ -9678,6 +10152,27 @@
         "ref/xamarinwatchos10/_._",
         "system.io.filesystem.primitives.4.3.0.nupkg.sha512",
         "system.io.filesystem.primitives.nuspec"
+      ]
+    },
+    "System.IO.Packaging/4.4.0": {
+      "sha512": "6Ks0U3YAW5UYGp4jxSwXCHuxHBk7ZmBfCJFhmpvn8jWIOPgXomz2Vd4PYxhaJIDchAcaYRO46Zc/TsqsYSuxhQ==",
+      "type": "package",
+      "path": "system.io.packaging/4.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net46/System.IO.Packaging.dll",
+        "lib/netstandard1.3/System.IO.Packaging.dll",
+        "ref/net46/System.IO.Packaging.dll",
+        "ref/net46/System.IO.Packaging.xml",
+        "ref/netstandard1.3/System.IO.Packaging.dll",
+        "ref/netstandard1.3/System.IO.Packaging.xml",
+        "system.io.packaging.4.4.0.nupkg.sha512",
+        "system.io.packaging.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.IO.Pipelines/4.5.0": {
@@ -12776,15 +13271,352 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "System.Xml.XPath.XmlDocument/4.3.0": {
+      "sha512": "A/uxsWi/Ifzkmd4ArTLISMbfFs6XpRPsXZonrIqyTY70xi8t+mDtvSM5Os0RqyRDobjMBwIDHDL4NOIbkDwf7A==",
+      "type": "package",
+      "path": "system.xml.xpath.xmldocument/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Xml.XPath.XmlDocument.dll",
+        "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/netstandard1.3/System.Xml.XPath.XmlDocument.dll",
+        "ref/netstandard1.3/System.Xml.XPath.XmlDocument.xml",
+        "ref/netstandard1.3/de/System.Xml.XPath.XmlDocument.xml",
+        "ref/netstandard1.3/es/System.Xml.XPath.XmlDocument.xml",
+        "ref/netstandard1.3/fr/System.Xml.XPath.XmlDocument.xml",
+        "ref/netstandard1.3/it/System.Xml.XPath.XmlDocument.xml",
+        "ref/netstandard1.3/ja/System.Xml.XPath.XmlDocument.xml",
+        "ref/netstandard1.3/ko/System.Xml.XPath.XmlDocument.xml",
+        "ref/netstandard1.3/ru/System.Xml.XPath.XmlDocument.xml",
+        "ref/netstandard1.3/zh-hans/System.Xml.XPath.XmlDocument.xml",
+        "ref/netstandard1.3/zh-hant/System.Xml.XPath.XmlDocument.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
+        "system.xml.xpath.xmldocument.nuspec"
+      ]
+    },
+    "TelerikMvcExtensions/2013.2.611": {
+      "sha512": "Z8xPlicQIl+DDf2FAwoD0HUzlSaPk9fdDkgPyl0/4YVmnRjlVNEgUY/xoy7BhVrJqZQBIrm5J3tIrxfjDC5tWA==",
+      "type": "package",
+      "path": "telerikmvcextensions/2013.2.611",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/App_GlobalResources/EditorLocalization.bg-BG.resx",
+        "content/App_GlobalResources/EditorLocalization.da-DK.resx",
+        "content/App_GlobalResources/EditorLocalization.de-DE.resx",
+        "content/App_GlobalResources/EditorLocalization.en-US.resx",
+        "content/App_GlobalResources/EditorLocalization.fr-FR.resx",
+        "content/App_GlobalResources/EditorLocalization.nl-NL.resx",
+        "content/App_GlobalResources/EditorLocalization.pl-PL.resx",
+        "content/App_GlobalResources/EditorLocalization.pt-BR.resx",
+        "content/App_GlobalResources/EditorLocalization.pt-PT.resx",
+        "content/App_GlobalResources/EditorLocalization.resx",
+        "content/App_GlobalResources/EditorLocalization.ru-RU.resx",
+        "content/App_GlobalResources/EditorLocalization.uk-UA.resx",
+        "content/App_GlobalResources/EditorLocalization.zh-CN.resx",
+        "content/App_GlobalResources/GridLocalization.bg-BG.resx",
+        "content/App_GlobalResources/GridLocalization.da-DK.resx",
+        "content/App_GlobalResources/GridLocalization.de-DE.resx",
+        "content/App_GlobalResources/GridLocalization.en-US.resx",
+        "content/App_GlobalResources/GridLocalization.es-ES.resx",
+        "content/App_GlobalResources/GridLocalization.fr-FR.resx",
+        "content/App_GlobalResources/GridLocalization.nl-NL.resx",
+        "content/App_GlobalResources/GridLocalization.pl-PL.resx",
+        "content/App_GlobalResources/GridLocalization.pt-BR.resx",
+        "content/App_GlobalResources/GridLocalization.pt-PT.resx",
+        "content/App_GlobalResources/GridLocalization.resx",
+        "content/App_GlobalResources/GridLocalization.ru-RU.resx",
+        "content/App_GlobalResources/GridLocalization.uk-UA.resx",
+        "content/App_GlobalResources/GridLocalization.zh-CN.resx",
+        "content/App_GlobalResources/UploadLocalization.bg-BG.resx",
+        "content/App_GlobalResources/UploadLocalization.da-DK.resx",
+        "content/App_GlobalResources/UploadLocalization.en-US.resx",
+        "content/App_GlobalResources/UploadLocalization.fr-FR.resx",
+        "content/App_GlobalResources/UploadLocalization.nl-NL.resx",
+        "content/App_GlobalResources/UploadLocalization.pl-PL.resx",
+        "content/App_GlobalResources/UploadLocalization.pt-BR.resx",
+        "content/App_GlobalResources/UploadLocalization.pt-PT.resx",
+        "content/App_GlobalResources/UploadLocalization.ru-RU.resx",
+        "content/App_GlobalResources/UploadLocalization.zh-CN.resx",
+        "content/Content/2013.2.611/Black/editor.png",
+        "content/Content/2013.2.611/Black/imagebrowser.png",
+        "content/Content/2013.2.611/Black/loading.gif",
+        "content/Content/2013.2.611/Black/slider-h.gif",
+        "content/Content/2013.2.611/Black/slider-v.gif",
+        "content/Content/2013.2.611/Black/sprite-vertical.png",
+        "content/Content/2013.2.611/Black/sprite.png",
+        "content/Content/2013.2.611/Black/treeview-line.png",
+        "content/Content/2013.2.611/Black/treeview-nodes-rtl.png",
+        "content/Content/2013.2.611/Black/treeview-nodes.png",
+        "content/Content/2013.2.611/Default/editor.png",
+        "content/Content/2013.2.611/Default/imagebrowser.png",
+        "content/Content/2013.2.611/Default/loading.gif",
+        "content/Content/2013.2.611/Default/slider-h.gif",
+        "content/Content/2013.2.611/Default/slider-v.gif",
+        "content/Content/2013.2.611/Default/sprite-vertical.png",
+        "content/Content/2013.2.611/Default/sprite.png",
+        "content/Content/2013.2.611/Default/treeview-line.png",
+        "content/Content/2013.2.611/Default/treeview-nodes-rtl.png",
+        "content/Content/2013.2.611/Default/treeview-nodes.png",
+        "content/Content/2013.2.611/Forest/editor.png",
+        "content/Content/2013.2.611/Forest/imagebrowser.png",
+        "content/Content/2013.2.611/Forest/loading.gif",
+        "content/Content/2013.2.611/Forest/slider-h.gif",
+        "content/Content/2013.2.611/Forest/slider-v.gif",
+        "content/Content/2013.2.611/Forest/sprite-vertical.png",
+        "content/Content/2013.2.611/Forest/sprite.png",
+        "content/Content/2013.2.611/Forest/treeview-line.png",
+        "content/Content/2013.2.611/Forest/treeview-nodes-rtl.png",
+        "content/Content/2013.2.611/Forest/treeview-nodes.png",
+        "content/Content/2013.2.611/Hay/editor.png",
+        "content/Content/2013.2.611/Hay/imagebrowser.png",
+        "content/Content/2013.2.611/Hay/loading.gif",
+        "content/Content/2013.2.611/Hay/slider-h.gif",
+        "content/Content/2013.2.611/Hay/slider-v.gif",
+        "content/Content/2013.2.611/Hay/sprite-vertical.png",
+        "content/Content/2013.2.611/Hay/sprite.png",
+        "content/Content/2013.2.611/Hay/treeview-line.png",
+        "content/Content/2013.2.611/Hay/treeview-nodes-rtl.png",
+        "content/Content/2013.2.611/Hay/treeview-nodes.png",
+        "content/Content/2013.2.611/Metro/editor.png",
+        "content/Content/2013.2.611/Metro/imagebrowser.png",
+        "content/Content/2013.2.611/Metro/loading.gif",
+        "content/Content/2013.2.611/Metro/slider-h.gif",
+        "content/Content/2013.2.611/Metro/slider-v.gif",
+        "content/Content/2013.2.611/Metro/sprite.png",
+        "content/Content/2013.2.611/Office2007/editor.png",
+        "content/Content/2013.2.611/Office2007/imagebrowser.png",
+        "content/Content/2013.2.611/Office2007/loading.gif",
+        "content/Content/2013.2.611/Office2007/slider-h.gif",
+        "content/Content/2013.2.611/Office2007/slider-v.gif",
+        "content/Content/2013.2.611/Office2007/sprite-vertical.png",
+        "content/Content/2013.2.611/Office2007/sprite.png",
+        "content/Content/2013.2.611/Office2007/treeview-line.png",
+        "content/Content/2013.2.611/Office2007/treeview-nodes-rtl.png",
+        "content/Content/2013.2.611/Office2007/treeview-nodes.png",
+        "content/Content/2013.2.611/Office2010Black/editor.png",
+        "content/Content/2013.2.611/Office2010Black/imagebrowser.png",
+        "content/Content/2013.2.611/Office2010Black/loading.gif",
+        "content/Content/2013.2.611/Office2010Black/slider-h.gif",
+        "content/Content/2013.2.611/Office2010Black/slider-v.gif",
+        "content/Content/2013.2.611/Office2010Black/sprite-vertical.png",
+        "content/Content/2013.2.611/Office2010Black/sprite.png",
+        "content/Content/2013.2.611/Office2010Black/treeview-line.png",
+        "content/Content/2013.2.611/Office2010Black/treeview-nodes-rtl.png",
+        "content/Content/2013.2.611/Office2010Black/treeview-nodes.png",
+        "content/Content/2013.2.611/Office2010Blue/editor.png",
+        "content/Content/2013.2.611/Office2010Blue/gradient.png",
+        "content/Content/2013.2.611/Office2010Blue/imagebrowser.png",
+        "content/Content/2013.2.611/Office2010Blue/loading.gif",
+        "content/Content/2013.2.611/Office2010Blue/slider-h.gif",
+        "content/Content/2013.2.611/Office2010Blue/slider-v.gif",
+        "content/Content/2013.2.611/Office2010Blue/sprite-vertical.png",
+        "content/Content/2013.2.611/Office2010Blue/sprite.png",
+        "content/Content/2013.2.611/Office2010Silver/editor.png",
+        "content/Content/2013.2.611/Office2010Silver/gradient.png",
+        "content/Content/2013.2.611/Office2010Silver/imagebrowser.png",
+        "content/Content/2013.2.611/Office2010Silver/loading.gif",
+        "content/Content/2013.2.611/Office2010Silver/slider-h.gif",
+        "content/Content/2013.2.611/Office2010Silver/slider-v.gif",
+        "content/Content/2013.2.611/Office2010Silver/sprite-vertical.png",
+        "content/Content/2013.2.611/Office2010Silver/sprite.png",
+        "content/Content/2013.2.611/Outlook/editor.png",
+        "content/Content/2013.2.611/Outlook/imagebrowser.png",
+        "content/Content/2013.2.611/Outlook/loading.gif",
+        "content/Content/2013.2.611/Outlook/slider-h.gif",
+        "content/Content/2013.2.611/Outlook/slider-v.gif",
+        "content/Content/2013.2.611/Outlook/sprite-vertical.png",
+        "content/Content/2013.2.611/Outlook/sprite.png",
+        "content/Content/2013.2.611/Outlook/treeview-line.png",
+        "content/Content/2013.2.611/Outlook/treeview-nodes-rtl.png",
+        "content/Content/2013.2.611/Outlook/treeview-nodes.png",
+        "content/Content/2013.2.611/Simple/editor.png",
+        "content/Content/2013.2.611/Simple/imagebrowser.png",
+        "content/Content/2013.2.611/Simple/loading.gif",
+        "content/Content/2013.2.611/Simple/slider-h.gif",
+        "content/Content/2013.2.611/Simple/slider-v.gif",
+        "content/Content/2013.2.611/Simple/sprite.png",
+        "content/Content/2013.2.611/Simple/treeview-line.png",
+        "content/Content/2013.2.611/Simple/treeview-nodes-rtl.png",
+        "content/Content/2013.2.611/Simple/treeview-nodes.png",
+        "content/Content/2013.2.611/Sitefinity/editor.png",
+        "content/Content/2013.2.611/Sitefinity/imagebrowser.png",
+        "content/Content/2013.2.611/Sitefinity/loading.gif",
+        "content/Content/2013.2.611/Sitefinity/slider-h.gif",
+        "content/Content/2013.2.611/Sitefinity/slider-v.gif",
+        "content/Content/2013.2.611/Sitefinity/sprite-vertical.png",
+        "content/Content/2013.2.611/Sitefinity/sprite.png",
+        "content/Content/2013.2.611/Sitefinity/treeview-line.png",
+        "content/Content/2013.2.611/Sitefinity/treeview-nodes-rtl.png",
+        "content/Content/2013.2.611/Sitefinity/treeview-nodes.png",
+        "content/Content/2013.2.611/Sunset/editor.png",
+        "content/Content/2013.2.611/Sunset/imagebrowser.png",
+        "content/Content/2013.2.611/Sunset/loading.gif",
+        "content/Content/2013.2.611/Sunset/slider-h.gif",
+        "content/Content/2013.2.611/Sunset/slider-v.gif",
+        "content/Content/2013.2.611/Sunset/sprite-vertical.png",
+        "content/Content/2013.2.611/Sunset/sprite.png",
+        "content/Content/2013.2.611/Sunset/treeview-line.png",
+        "content/Content/2013.2.611/Sunset/treeview-nodes-rtl.png",
+        "content/Content/2013.2.611/Sunset/treeview-nodes.png",
+        "content/Content/2013.2.611/Telerik/editor.png",
+        "content/Content/2013.2.611/Telerik/imagebrowser.png",
+        "content/Content/2013.2.611/Telerik/loading.gif",
+        "content/Content/2013.2.611/Telerik/slider-h.gif",
+        "content/Content/2013.2.611/Telerik/slider-v.gif",
+        "content/Content/2013.2.611/Telerik/sprite-vertical.png",
+        "content/Content/2013.2.611/Telerik/sprite.png",
+        "content/Content/2013.2.611/Telerik/treeview-line.png",
+        "content/Content/2013.2.611/Telerik/treeview-nodes-rtl.png",
+        "content/Content/2013.2.611/Telerik/treeview-nodes.png",
+        "content/Content/2013.2.611/Transparent/active.png",
+        "content/Content/2013.2.611/Transparent/editor.png",
+        "content/Content/2013.2.611/Transparent/gradient.png",
+        "content/Content/2013.2.611/Transparent/group.png",
+        "content/Content/2013.2.611/Transparent/hover.png",
+        "content/Content/2013.2.611/Transparent/imagebrowser.png",
+        "content/Content/2013.2.611/Transparent/loading.gif",
+        "content/Content/2013.2.611/Transparent/selected.png",
+        "content/Content/2013.2.611/Transparent/slider-h.gif",
+        "content/Content/2013.2.611/Transparent/slider-v.gif",
+        "content/Content/2013.2.611/Transparent/sprite-vertical.png",
+        "content/Content/2013.2.611/Transparent/sprite.png",
+        "content/Content/2013.2.611/Transparent/toolbar.png",
+        "content/Content/2013.2.611/Transparent/widget.png",
+        "content/Content/2013.2.611/Vista/editor.png",
+        "content/Content/2013.2.611/Vista/imagebrowser.png",
+        "content/Content/2013.2.611/Vista/loading.gif",
+        "content/Content/2013.2.611/Vista/slider-h.gif",
+        "content/Content/2013.2.611/Vista/slider-v.gif",
+        "content/Content/2013.2.611/Vista/sprite-vertical.png",
+        "content/Content/2013.2.611/Vista/sprite.png",
+        "content/Content/2013.2.611/Web20/editor.png",
+        "content/Content/2013.2.611/Web20/imagebrowser.png",
+        "content/Content/2013.2.611/Web20/loading.gif",
+        "content/Content/2013.2.611/Web20/slider-h.gif",
+        "content/Content/2013.2.611/Web20/slider-v.gif",
+        "content/Content/2013.2.611/Web20/sprite-vertical.png",
+        "content/Content/2013.2.611/Web20/sprite.png",
+        "content/Content/2013.2.611/Web20/treeview-line.png",
+        "content/Content/2013.2.611/Web20/treeview-nodes-rtl.png",
+        "content/Content/2013.2.611/Web20/treeview-nodes.png",
+        "content/Content/2013.2.611/WebBlue/editor.png",
+        "content/Content/2013.2.611/WebBlue/imagebrowser.png",
+        "content/Content/2013.2.611/WebBlue/loading.gif",
+        "content/Content/2013.2.611/WebBlue/slider-h.gif",
+        "content/Content/2013.2.611/WebBlue/slider-v.gif",
+        "content/Content/2013.2.611/WebBlue/sprite-vertical.png",
+        "content/Content/2013.2.611/WebBlue/sprite.png",
+        "content/Content/2013.2.611/WebBlue/treeview-line.png",
+        "content/Content/2013.2.611/WebBlue/treeview-nodes-rtl.png",
+        "content/Content/2013.2.611/WebBlue/treeview-nodes.png",
+        "content/Content/2013.2.611/Windows7/editor.png",
+        "content/Content/2013.2.611/Windows7/imagebrowser.png",
+        "content/Content/2013.2.611/Windows7/loading.gif",
+        "content/Content/2013.2.611/Windows7/slider-h.gif",
+        "content/Content/2013.2.611/Windows7/slider-v.gif",
+        "content/Content/2013.2.611/Windows7/sprite-vertical.png",
+        "content/Content/2013.2.611/Windows7/sprite.png",
+        "content/Content/2013.2.611/telerik.black.min.css",
+        "content/Content/2013.2.611/telerik.common.min.css",
+        "content/Content/2013.2.611/telerik.default.min.css",
+        "content/Content/2013.2.611/telerik.forest.min.css",
+        "content/Content/2013.2.611/telerik.hay.min.css",
+        "content/Content/2013.2.611/telerik.metro.min.css",
+        "content/Content/2013.2.611/telerik.office2007.min.css",
+        "content/Content/2013.2.611/telerik.office2010black.min.css",
+        "content/Content/2013.2.611/telerik.office2010blue.min.css",
+        "content/Content/2013.2.611/telerik.office2010silver.min.css",
+        "content/Content/2013.2.611/telerik.outlook.min.css",
+        "content/Content/2013.2.611/telerik.rtl.min.css",
+        "content/Content/2013.2.611/telerik.simple.min.css",
+        "content/Content/2013.2.611/telerik.sitefinity.min.css",
+        "content/Content/2013.2.611/telerik.sunset.min.css",
+        "content/Content/2013.2.611/telerik.telerik.min.css",
+        "content/Content/2013.2.611/telerik.transparent.min.css",
+        "content/Content/2013.2.611/telerik.vista.min.css",
+        "content/Content/2013.2.611/telerik.web20.min.css",
+        "content/Content/2013.2.611/telerik.webblue.min.css",
+        "content/Content/2013.2.611/telerik.windows7.min.css",
+        "content/Scripts/2013.2.611/jquery-1.7.1.min.js",
+        "content/Scripts/2013.2.611/jquery.validate.min.js",
+        "content/Scripts/2013.2.611/telerik.all.min.js",
+        "content/Scripts/2013.2.611/telerik.autocomplete.min.js",
+        "content/Scripts/2013.2.611/telerik.calendar.min.js",
+        "content/Scripts/2013.2.611/telerik.chart.min.js",
+        "content/Scripts/2013.2.611/telerik.combobox.min.js",
+        "content/Scripts/2013.2.611/telerik.common.min.js",
+        "content/Scripts/2013.2.611/telerik.datepicker.min.js",
+        "content/Scripts/2013.2.611/telerik.datetimepicker.min.js",
+        "content/Scripts/2013.2.611/telerik.draganddrop.min.js",
+        "content/Scripts/2013.2.611/telerik.editor.min.js",
+        "content/Scripts/2013.2.611/telerik.grid.editing.min.js",
+        "content/Scripts/2013.2.611/telerik.grid.filtering.min.js",
+        "content/Scripts/2013.2.611/telerik.grid.grouping.min.js",
+        "content/Scripts/2013.2.611/telerik.grid.min.js",
+        "content/Scripts/2013.2.611/telerik.grid.reordering.min.js",
+        "content/Scripts/2013.2.611/telerik.grid.resizing.min.js",
+        "content/Scripts/2013.2.611/telerik.imagebrowser.min.js",
+        "content/Scripts/2013.2.611/telerik.list.min.js",
+        "content/Scripts/2013.2.611/telerik.menu.min.js",
+        "content/Scripts/2013.2.611/telerik.panelbar.min.js",
+        "content/Scripts/2013.2.611/telerik.slider.min.js",
+        "content/Scripts/2013.2.611/telerik.splitter.min.js",
+        "content/Scripts/2013.2.611/telerik.tabstrip.min.js",
+        "content/Scripts/2013.2.611/telerik.textbox.min.js",
+        "content/Scripts/2013.2.611/telerik.timepicker.min.js",
+        "content/Scripts/2013.2.611/telerik.treeview.min.js",
+        "content/Scripts/2013.2.611/telerik.upload.min.js",
+        "content/Scripts/2013.2.611/telerik.window.min.js",
+        "content/web.config.transform",
+        "lib/net20/Telerik.Web.Mvc.dll",
+        "lib/net40/Telerik.Web.Mvc.dll",
+        "telerikmvcextensions.2013.2.611.nupkg.sha512",
+        "telerikmvcextensions.nuspec"
+      ]
+    },
+    "TemplateEngine.Docx/1.1.5": {
+      "sha512": "8OrDtfR45YuFgBRgldg704F0YFD6fhxwAT3/lSOVyxd0E4e+4lTXbJnUpBq40MOtexNragBcNyVNc+mWvoHimw==",
+      "type": "package",
+      "path": "templateengine.docx/1.1.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/TemplateEngine.Docx.dll",
+        "templateengine.docx.1.1.5.nupkg.sha512",
+        "templateengine.docx.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "ClosedXML >= 0.95.3",
+      "Flurl >= 2.8.2",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.10",
-      "Swashbuckle.AspNetCore >= 5.5.1"
+      "Rotativa >= 1.7.3",
+      "Swashbuckle.AspNetCore >= 5.5.1",
+      "TelerikMvcExtensions >= 2013.2.611",
+      "TemplateEngine.Docx >= 1.1.5",
+      "sautinsoft.document >= 4.5.6.17"
     ]
   },
   "packageFolders": {
@@ -12828,6 +13660,14 @@
     "frameworks": {
       "netcoreapp2.1": {
         "dependencies": {
+          "ClosedXML": {
+            "target": "Package",
+            "version": "[0.95.3, )"
+          },
+          "Flurl": {
+            "target": "Package",
+            "version": "[2.8.2, )"
+          },
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",
             "target": "Package",
@@ -12840,6 +13680,7 @@
             "version": "[2.1.2, )"
           },
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
@@ -12848,17 +13689,101 @@
             "target": "Package",
             "version": "[2.1.10, )"
           },
+          "Rotativa": {
+            "target": "Package",
+            "version": "[1.7.3, )"
+          },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[5.5.1, )"
+          },
+          "TelerikMvcExtensions": {
+            "target": "Package",
+            "version": "[2013.2.611, )"
+          },
+          "TemplateEngine.Docx": {
+            "target": "Package",
+            "version": "[1.1.5, )"
+          },
+          "sautinsoft.document": {
+            "target": "Package",
+            "version": "[4.5.6.17, )"
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"Microsoft.AspNet.Mvc 5.2.3\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\", а не целевой платформы проекта \".NETCoreApp,Version=v2.1\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "Microsoft.AspNet.Mvc",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"Microsoft.AspNet.Razor 3.2.3\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\", а не целевой платформы проекта \".NETCoreApp,Version=v2.1\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "Microsoft.AspNet.Razor",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"Microsoft.AspNet.WebPages 3.2.3\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\", а не целевой платформы проекта \".NETCoreApp,Version=v2.1\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "Microsoft.AspNet.WebPages",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"Microsoft.Web.Infrastructure 1.0.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\", а не целевой платформы проекта \".NETCoreApp,Version=v2.1\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "Microsoft.Web.Infrastructure",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"Rotativa 1.7.3\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\", а не целевой платформы проекта \".NETCoreApp,Version=v2.1\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "Rotativa",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"TelerikMvcExtensions 2013.2.611\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\", а не целевой платформы проекта \".NETCoreApp,Version=v2.1\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "TelerikMvcExtensions",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    }
+  ]
 }
